@@ -1,0 +1,1 @@
+alert("Bem Vindo! Você agora engressou na fatec!");
