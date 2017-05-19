@@ -6,7 +6,7 @@ function trocaImg(){
 }
 
 function escolhe(){
-	cenaAtual = prompt("Digite o numero da ceda");
+	cenaAtual = parseInt(prompt("Digite o numero da cena"));
 	trocaImg();
 }
 
