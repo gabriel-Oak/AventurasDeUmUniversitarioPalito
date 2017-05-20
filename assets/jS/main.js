@@ -49,6 +49,23 @@ function mudaCena (escolha){
   				trocaImg();
   			}
   			break;
+      case 4:
+        if (escolha){
+          cenaAtual = 6;
+          alert("Você ficou pobre e agora vai ter de vender miçanga!!");
+          trocaImg();
+        }
+        break;
+      case 5:
+        break;
+      case 6:
+        if (escolha){
+          cenaAtual = 2;
+          alert("Entrando...");
+          trocaImg();
+        }
+        break;
+
 	}
 }
 
