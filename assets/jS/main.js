@@ -57,8 +57,20 @@ function mudaCena (escolha){
         }
         break;
       case 5:
+        if (escolha){
+          cenaAtual = 7;
+          alert("Você acaba de desenvolver um câncer");
+          trocaImg();
+        }
         break;
       case 6:
+        if (escolha){
+          cenaAtual = 2;
+          alert("Entrando...");
+          trocaImg();
+        }
+        break;
+      case 7:
         if (escolha){
           cenaAtual = 2;
           alert("Entrando...");
