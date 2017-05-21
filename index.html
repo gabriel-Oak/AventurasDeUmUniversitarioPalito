@@ -5,11 +5,14 @@
 	<meta charset="utf-8">
 	<script type="text/javascript" src="assets/jS/main.js"></script>
 </head>
-<body>
-	<input type="button" id="escolheCena" value="Ir para cena:" onclick="escolhe();">
-	<img src="assets/img/cena0.jpeg" id="cena">
-	<h2>Escolha: <input type="button" id="decisao1" value="Escolha 1" onclick="mudaCena(1);">
-	<input type="button" id="decisao2" value="Escolha 2" onclick="mudaCena(2);"></h2>
+<body onload="trocaImg();">
+	<input type="button" id="escolheCena" value="Ir para cena:" onclick="escolhe();"><br/>
+	<div align="center">
+		<img src="" id="cena">
+		<div id="textoCena"></div>
+		<h2>Escolha: <input type="button" id="decisao1" value="Escolha 1" onclick="mudaCena(1);">
+		<input type="button" id="decisao2" value="Escolha 2" onclick="mudaCena(2);"></h2>
+	</div>
 </body>
 </html>
  
