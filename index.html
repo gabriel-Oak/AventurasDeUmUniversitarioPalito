@@ -1,18 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
 	<title>O Sábadado De Um Fatequiano</title>
 	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+	<style type="text/css">
+		h2 {
+			font-family: 'Inconsolata', monospace;
+		}
+
+		span.decisao {
+			font-weight: bold;
+			border: thin solid #000000;
+			padding: 5px;
+			background-color: #DDDDDD;
+			cursor: pointer;
+			transition: 0.5s;
+		}
+		span.decisao:hover{
+			background-color: #000000;
+			color: #DDDDDD;
+			transition: 0.5s;
+		}
+
+		span.undec {
+			transition: 0.5s;
+		}
+	</style>
+
 	<script type="text/javascript" src="assets/jS/main.js"></script>
+
 </head>
+
+
 <body onload="trocaImg();">
+
 	<input type="button" id="escolheCena" value="Ir para cena:" onclick="escolhe();"><br/>
+
 	<div align="center">
 		<img src="" id="cena">
-		<div id="textoCena"></div>
-		<h2>Escolha: <input type="button" id="decisao1" value="Escolha 1" onclick="mudaCena(1);">
-		<input type="button" id="decisao2" value="Escolha 2" onclick="mudaCena(2);"></h2>
+		<div id="textoCena">
+			<h2 id="descricao">O Sabado de um fatequiano</h2>
+		</div>
+
+		<h2>Escolha:
+		<span id="escolha1" class="decisao" onclick="mudaCena(1)">Iniciar</span>
+		<span id="escolha2" class="undec" onclick="mudaCena(2)"></span></h2>
 	</div>
+
 </body>
 </html>
  
