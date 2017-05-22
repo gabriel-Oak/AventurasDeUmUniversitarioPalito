@@ -59,7 +59,7 @@ function mudaCena (escolha){
   			break;
   		case 2:
   			if (escolha == 1){
-  				alert("Boa noite para você também!");
+  				alert("Bom dia para você também!");
           mensagem = "Chegamos no laboratório";
           trocaImg();
           //botoes
