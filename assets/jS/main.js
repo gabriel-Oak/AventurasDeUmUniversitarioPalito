@@ -46,7 +46,7 @@ function mudaCena (escolha){
   				cenaAtual = 2;
   				mensagem = "Entrando...";
   				trocaImg();
-          botao("escolha1", "Boa Noite!");
+          botao("escolha1", "Bom Dia!");
           botao("escolha2", "Gatinho, gatinho");
   			}
   			else{
