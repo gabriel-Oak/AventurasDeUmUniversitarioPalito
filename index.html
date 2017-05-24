@@ -9,6 +9,7 @@
 	<style type="text/css">
 		h2 {
 			font-family: 'Inconsolata', monospace;
+			
 		}
 
 		span.decisao {
@@ -35,12 +36,14 @@
 </head>
 
 
-<body onload="trocaImg();">
+<body onload="trocaImg(); dimen();" onresize="dimen();">
 
 	<input type="button" id="escolheCena" value="Ir para cena:" onclick="escolhe();"><br/>
 
 	<div align="center">
-		<img src="" id="cena">
+		<div id="imagem">
+			<img src="" id="cena">
+		</div>
 		<div id="textoCena">
 			<h2 id="descricao">O Sabado de um fatequiano</h2>
 		</div>

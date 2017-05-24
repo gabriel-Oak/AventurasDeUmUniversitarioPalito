@@ -1,5 +1,20 @@
 var mensagem = "Bem Vindo! Você agora engressou na fatec!";
 var cenaAtual = 0;
+
+
+function dimen(){
+  var altura = (window.innerHeight - 100) * 0.9;
+  var font = (altura / 30);
+
+  if (font < 14)
+    font = 14;
+
+  document.getElementById("imagem").innerHTML = "<img src='"+ "assets/img/cena" + cenaAtual + ".jpeg" +"' id='cena' height='" + altura + "'>";
+  var h = document.getElementsByTagName("h2");
+  for (var i = 0; i < h.length; i++){
+    h[i].style.fontSize = font + "px";
+  }
+}
  
 function trocaImg(){
   var node = document.getElementById("descricao");
@@ -59,15 +74,21 @@ function mudaCena (escolha){
   			break;
   		case 2:
   			if (escolha == 1){
+          cenaAtual = 8;
   				alert("Bom dia para você também!");
-          mensagem = "Chegamos no laboratório";
+          mensagem = "Tem algo errado com os pássaros";
           trocaImg();
+          botao("escolha1", "Avançar!");
+          botao("escolha2", "", true);
           //botoes
   			}
   			else {
   			  alert("Mawn!!");
-          mensagem = "Chegamos no laboratório";
+          cenaAtual = 9;
+          mensagem = "Ownt *_*";
           trocaImg();
+          botao("escolha1", "Avançar!");
+          botao("escolha2", "", true);
           //botoes
   			}
   			break;
