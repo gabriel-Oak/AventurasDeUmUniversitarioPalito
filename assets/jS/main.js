@@ -144,6 +144,24 @@ function mudaCena (escolha){
           botao("escolha2", "Gatinho, gatinho");
         }
         break;
+      case 8:
+        if (escolha){
+          cenaAtual = 10;
+          mensagem = "O laboratório de informática...";
+          trocaImg();
+          botao("escolha1", "Evaldo");
+          botao("escolha2", "Deise");
+        }
+        break;
+      case 9:
+        if (escolha){
+          cenaAtual = 10;
+          mensagem = "O laboratório de informática...";
+          trocaImg();
+          botao("escolha1", "Evaldo");
+          botao("escolha2", "Deise");
+        }
+        break;
 
 	}
 }
