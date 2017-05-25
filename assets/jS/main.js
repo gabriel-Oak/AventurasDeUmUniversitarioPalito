@@ -4,12 +4,19 @@ var cenaAtual = 0;
 
 function dimen(){
   var altura = (window.innerHeight - 100) * 0.9;
+  var largura = (window.innerWidth - 100) * 0.9;
   var font = (altura / 30);
 
   if (font < 14)
     font = 14;
 
-  document.getElementById("imagem").innerHTML = "<img src='"+ "assets/img/cena" + cenaAtual + ".jpeg" +"' id='cena' height='" + altura + "'>";
+  if (altura < largura){
+    document.getElementById("imagem").innerHTML = "<img src='"+ "assets/img/cena" + cenaAtual + ".jpeg" +"' id='cena' height='" + altura + "'>";
+  } else {
+    document.getElementById("imagem").innerHTML = "<img src='"+ "assets/img/cena" + cenaAtual + ".jpeg" +"' id='cena' width='" + largura + "'>";
+  }
+
+  
   var h = document.getElementsByTagName("h2");
   for (var i = 0; i < h.length; i++){
     h[i].style.fontSize = font + "px";
