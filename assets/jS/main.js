@@ -10,7 +10,7 @@ function dimen(){
   if (font < 14)
     font = 14;
 
-  if (altura < largura){
+  if (altura <= largura){
     document.getElementById("imagem").innerHTML = "<img src='"+ "assets/img/cena" + cenaAtual + ".jpeg" +"' id='cena' height='" + altura + "'>";
   } else {
     document.getElementById("imagem").innerHTML = "<img src='"+ "assets/img/cena" + cenaAtual + ".jpeg" +"' id='cena' width='" + largura + "'>";
@@ -167,6 +167,49 @@ function mudaCena (escolha){
           trocaImg();
           botao("escolha1", "Evaldo");
           botao("escolha2", "Deise");
+        }
+        break;
+      case 10:
+        if (escolha == 1){
+          cenaAtual = 11;
+          mensagem = "Evaldo te ensinou a processar dados no cartorio";
+          trocaImg();
+          botao("escolha1", "Avançar!");
+          botao("escolha2", "", true);
+        }
+        else {
+          cenaAtual = 12;
+          mensagem = "Deise te ensinou a usar o Linkedin";
+          trocaImg();
+          botao("escolha1", "Avançar");
+          botao("escolha2", "", true);
+        } 
+        break;
+      case 11:
+        if (escolha){
+          cenaAtual = 13;
+          mensagem = "Galera hoje eu vou falar de...";
+          trocaImg();
+          botao("escolha1", "Avançar");
+          botao("escolha2", "", true);
+        }
+        break;
+      case 12:
+        if (escolha){
+          cenaAtual = 13;
+          mensagem = "Galera hoje eu vou falar de...";
+          trocaImg();
+          botao("escolha1", "Avançar");
+          botao("escolha2", "", true);
+        }
+        break;
+      case 13:
+        if (escolha){
+          cenaAtual = 14;
+          mensagem = "Essa piada não estava programada...";
+          trocaImg();
+          botao("escolha1", "Janela");
+          botao("escolha2", "Aula");
         }
         break;
 
